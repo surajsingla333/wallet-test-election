@@ -22,19 +22,19 @@ App = {
       // App.web3Provider = web3.currentProvider;
       // web3 = new Web3(web3.currentProvider);
 
-      // App.web3Provider = window.ethereum.provider;
-      // web3 = new Web3(window.ethereum.provider);
+      // App.web3Provider = window.ethereum;
+      // web3 = new Web3(window.ethereum);
 
-      // await window.ethereum.provider.enable();
+      // await window.ethereum.enable();
 
-      App.web3Provider = window.ethereum.provider;
+      App.web3Provider = window.ethereum;
 
-      console.log("window.ethereum.provider , ", window.ethereum.provider)
-      // web3 = new Web3(window.ethereum.provider);
-      web3 = new Web3(window.ethereum.provider);
+      console.log("window.ethereum , ", window.ethereum)
+      // web3 = new Web3(window.ethereum);
+      web3 = new Web3(window.ethereum);
       console.log({web3})
 
-      // await window.ethereum.provider.enable();
+      // await window.ethereum.enable();
 
       // setTimeout(() => {
 
@@ -42,7 +42,7 @@ App = {
       // }, 5000)
 
 
-      // window.addEventListener('load', window.ethereum.provider.enable())
+      // window.addEventListener('load', window.ethereum.enable())
       // window.addEventListener('load', () => { console.log("1 ", window.safle) })
 
 
@@ -60,7 +60,7 @@ App = {
     } else {
       // Specify default instance if no web3 instance provided
       // App.web3Provider = new Web3.providers.HttpProvider('http://localhost:7545');
-      App.web3Provider = window.ethereum.provider
+      App.web3Provider = window.ethereum
       web3 = new Web3(App.web3Provider);
     }
 
